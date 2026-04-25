@@ -2,7 +2,15 @@
 
 ## Data Generation
 
-Data ini merupakan data sintetis yang dibuat untuk mensimulasikan perilaku pemain game gacha.
+Data ini merupakan data sintetis yang dibuat untuk mensimulasikan perilaku pemain game gacha. Berikut proses lengkap dan logic dibalik data generation:
+
+- churn_score
+  Meningkat berdasarkan beberapa variabel lain. Ini jadi salah satu komponen yang menentukan tingkat churn player.
+
+- Hardware
+  Menentukan hardware secara acak, dengan base_fps tergantung dari hardware player. Fps akan turun seiring minggu dengan decay_rate, menghasilkam avg_fps_week dalam 8 minggu.
+
+- Gacha / Spin / Pull
 
 ## Struktur Data
 
